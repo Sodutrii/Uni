@@ -29,3 +29,15 @@ trumpCard trumpSuit trumpCard card1 card2
 
 trick :: Suit -> Card -> Card -> Card
 trick trumpSuit card1 card2 = trumpCard trumpSuit trumpCard card1 card2
+
+--Aufgabe 2
+
+--a)
+odds :: Int -> [Int]
+odds x  = [x | x <- [1..x] , x mod 2 == 1]
+
+divs :: Int -> [Int] 
+divs n = init ([ x | x <- [2..n], n mod x == 0])
+
+pyths :: Int -> [(Int, Int, Int)]
+pyths n = [(a,b,c) | c <- [1..n], b <- [1..c-1], a <- [1..b-1], a^2 + b^2 == c^2]
