@@ -7,3 +7,5 @@ data Suit = Clubs | Diamonds | Hearts | Spades
 
 data Card = Of Rank Suit
     deriving Show
+
+--big test
